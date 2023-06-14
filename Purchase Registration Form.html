@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<!-- تعریف زبان فارسی -->
+<html lang="fa">
+  
+<head>
+
+<!-- تعریف کاراکترهای زبان فارسی -->
+<meta charset="UTF-8">
+
+      <title>فرم ثبت نام برای خرید</title>
+      <style>
+
+/* استایل دهی به کل اِلمان های پس زمینه ها */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Irannastaliq;
+        background-color: #ffc482;
+        text-shadow: 5px 5px 5px #311b0186;
+      }
+
+/* استایل دهی به عنوان کلیه فرم ها */
+      form {
+        background-color: #e2b213;
+        border: 2px solid #696868;
+        border-radius: 10px;
+        padding: 20px;
+        width: 50%;
+        margin: 50px auto;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.432);
+      }
+
+/* استایل دهی به عنوان فرم ثبت نام برای خرید */
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        color: #311b01;
+        margin-top: 50px;
+        text-shadow: 3px 3px 3px #311b0186;
+      }
+
+/* استایل دهی به عنوان لیبل ها خرید */
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: right;
+        color: #311b01;
+      }
+
+/* استایل دهی به فرم های ورودی نام و آدرس و تلفن و ایمیل و نوع محصول */
+      input[type="text"], input[type="tel"], input[type="email"], input[type="password"], select {
+        color: #311b01;
+        padding: 10px;
+        border: 1px solid #696868;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 20px;
+        position: relative;
+        right: 10px;
+      }
+
+/* استایل دهی به بخش تعداد سفارش */
+      input[type="number"] {
+        padding: 10px;
+        border: 1px solid #696868;
+        border-radius: 5px;
+        width: 60px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        position: relative;
+        left: 667px;
+      }
+      
+/* استایل دهی به فرم روش پرداخت */
+      input[type="radio"], input[type="checkbox"] {
+        position: relative;
+        top: 50px;
+        left: 660px;
+      }
+      
+/* استایل دهی به کلید ثبت سفارش */
+      button[type="submit"] {
+        background-color: #285503;
+			  color: hsl(0, 0%, 100%);
+			  font-family: Irannastaliq;
+			  font-size: larger;
+			  width: 700px;
+			  height: 50px;
+			  border-radius: 10px;
+			  border-style: outset;
+			  border-width: 2px;
+			  border-color: rgb(255, 255, 255);
+			  box-shadow: 2px 2px 2px 2px #0e1800;
+        position: relative;
+        left: 30px;
+			  cursor: pointer;
+		}
+
+/* استایل دهی به اکشن موس بر روی کلید ثبت سفارش */
+      button[type="submit"]:hover {
+        background-color: #5dcc02;
+        
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>فرم ثبت نام برای خرید</h1>
+    <form>
+      <label for="name">:نام و نام خانوادگی</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="address">:آدرس</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="phone">:تلفن تماس</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">:ایمیل</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="product">:محصول</label>
+      <select id="product" name="product">
+        <option value="product1">D-4414 کد محصول</option>
+        <option value="product1">S-5515 کد محصول</option>
+        <option value="product1">O-6624 کد محصول</option>
+        <option value="product1">O-6625 کد محصول</option>
+        <option value="product1">P-7736 کد محصول</option>
+      </select>
+
+      <label for="quantity">:تعداد</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+      <label>:روش پرداخت</label>
+      <input type="radio" id="payment1" name="payment" value="credit" required>
+      <label for="payment1">کارت اعتباری</label>
+      <input type="radio" id="payment2" name="payment" value="inlocation" required>
+      <label for="payment2">پرداخت در محل</label>
+
+      <br><br>
+      <button input type="submit">ثبت سفارش</button>
+    </form>
+
+  </body>
+</html>
