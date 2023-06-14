@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<!-- تعریف زبان فارسی -->
+<html lang="fa">
+
+<head>
+	
+<!-- تعریف کاراکترهای زبان فارسی -->
+<meta charset="UTF-8">
+
+	<title>به سایت چرم هیراد خوش آمدید</title>
+	<style>
+
+/* استایل دهی به کادر در قسمت بالای صفحه وب */
+		header {
+			background-color: rgba(145, 88, 2, 0.8);
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+		}
+
+/* استایل دهی به پس زمینه صفحه وب */
+		body {
+			background-color: #ffc482;
+			margin: 0;
+			padding: 0;
+			font-family: Irannastaliq;
+			font-size: 20px;
+			line-height: 1.5;
+		}
+
+/* استایل دهی به لیست در قسمت بالای صفحه وب */
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+		}
+
+/* استایل دهی به فاصله مابین لیست در قسمت بالای صفحه وب */
+		nav li {
+			font-weight: bold;
+			text-align: center;
+			margin: 10px;
+			border-radius: 5px;
+			box-shadow: 2px 2px 2px 2px #0e1800;
+			width: 100px;
+			height: 50px;
+			position: relative;
+			bottom: 5px;
+		}
+
+/* استایل دهی به عناوین و لینک لیست ها در قسمت بالای صفحه وب */
+		nav a {
+			background-color: #ffc482;
+			border-radius: 5px;
+			display: block;
+			padding: 10px;
+			color: #241300;
+			text-decoration: none;
+		}
+		
+/* استایل دهی به رنگ لیست ها و اکشن  لیست ها هنگام کلیک شدن بر روی آنها در قسمت بالای صفحه وب */
+		nav a:hover {
+			background-color: #e2b213;
+			color: #fff;
+		}
+
+/* استایل دهی به کلیه دکمه ها */
+		button {
+			background-color: #285503;
+			color: hsl(0, 0%, 100%);
+			font-family: Irannastaliq;
+			font-size: large;
+			width: 100px;
+			height: 50px;
+			border-radius: 10px;
+			border-style: outset;
+			border-width: 2px;
+			border-color: rgb(255, 255, 255);
+			box-shadow: 2px 2px 2px 2px #0e1800;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+
+/* استایل دهی به کادر زیر محصولات */
+		.container {
+			background-color: rgba(255, 255, 255);
+			max-width: 1200px;
+			margin: 100px auto;
+			padding: 45px;
+			text-align: center;
+			margin-top: 280px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.712);
+		}
+		
+/* استایل دهی به متن عنوان در قسمت میانی صفحه وب */
+		h1 {
+			color: #1f1100;
+			text-shadow: 0 3px 3px #ffc482;
+;
+		}
+
+/* استایل دهی به محل قرارگیری کادر زیر محصولات */
+		.container .products {
+			display: flex;
+			justify-content: center;
+			margin-top: 50px;
+		}
+
+/* استایل دهی به کادر زیر محصولات */
+		.container .products .product {
+			margin: 10px;
+			padding: 10px;
+			background-color: #e2b213;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.712);
+			border-radius: 7px;
+		}
+
+/* استایل دهی به عکس و محصولات */
+		.container .products .product img {
+			max-width: 100%;
+			height: auto;
+		}
+
+/* استایل دهی به کادر میانی نوع محصول محصولات */
+		.container .products .product h3 {
+			margin-bottom: 0;
+			box-shadow: 2px 2px 2px 2px #3b3b3b;
+			box-sizing: 10px;
+			border-radius: 5px;
+		}
+
+/* استایل دهی به کادر در قسمت پایین صفحه وب */
+		footer {
+			background-color: rgba(145, 88, 2, 0.8);
+			padding: 10px;
+			position: absolute;
+			bottom: -675px;
+			left: 0;
+			right: 0;
+		}
+
+/* استایل دهی به متن پاراگراف در قسمت پایین صفحه وب */
+		footer p {
+			margin: 0;
+			padding-bottom: 20px;
+			text-align: center;
+      		font-family: Arial;
+      		font-size: 20px;
+      		font-style: italic;
+      		color: #241300;
+      	}
+
+/* استایل دهی به عکس "لوگوی هیراد" در قسمت بالای صفحه وب */
+	header img {
+      		margin-top: 0px;
+     		margin-bottom: -265px;
+			position: relative;
+			left: 1100px;
+		}
+
+/* استایل دهی به عکس "نماد اعتماد" در قسمت پایین صفحه وب */
+    footer img {
+      		margin-top: 0px;
+     		margin-bottom: -160px;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<header>
+		
+<!-- تعریف عکس لوگو هیراد و تخفیف تابستانه در قسمت بالای صفحه وب -->
+				<img src="C:\Hirad Leather Website\Image\Hirad Leather Farsi Logo.png" alt="لوگو هیراد" width="20%" height="20%">
+				<h1 style="margin-left: 100px;">از جشنواره تخفیف های تابستانه ما لذت ببرید</h1>
+				<hr style="border-color: #e2b213;">
+
+<!-- تعریف محتویات قسمت بالای صفحه وب شامل: لیست صفحه اصلی / درباره ما / تماس با ما -->
+		<nav>
+			<ul>
+				<li><a href="file:///C:/Hirad%20Leather%20Website/Contact%20Us.html">تماس با ما</a></li>
+				<li><a href="file:///C:/Hirad%20Leather%20Website/Enter%20To%20Farsi%20Hirad%20Leather%20Site.html">درباره ما</a></li>
+				<li><a href="file:///C:/Hirad%20Leather%20Website/Home%20Page%20Hirad%20Leather%20Site.html">صفحه اصلی</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+<!-- تعریف عنوان میانی صفحه وب -->
+			<div class="container">
+				<h1>ویترین دست ساخته های چرمی هیراد</h1>
+			<div class="products">
+
+<!-- تعریف محصول کد 7736، کیف زنانه مجلسی -->
+      		<div class="product">
+				<img src="C:\Hirad Leather Website\Image/6.jpg" alt="محصول 5" width="200"	height="200">
+				<h3 style="font-family: A Zangar_Hamshahri;">کیف زنانه مجلسی</h3>
+				<p><ul><br><li>چرم طبیعی گاوی</li><br><li>در انواع رنگ های مختلف</li><br><li>P-7736:کد محصول</li><br></ul></p>
+				<p style="font-family: A Zangar_Hamshahri;">قیمت: 1,100,000 تومان</p>
+				<button onclick="window.location.href='Purchase Registration Form.html'">افزودن به سبد خرید</button>
+			</div>
+
+<!-- تعریف محصول کد 6625، کیف دوشی زنانه -->
+      		<div class="product">
+				<img src="C:\Hirad Leather Website\Image/5.jpg" alt="محصول 4" width="200"	height="200">
+				<h3 style="font-family: A Zangar_Hamshahri;">کیف دوشی زنانه</h3>
+				<p><ul><br><li>چرم طبیعی گاوی</li><br><li>در رنگ های قهوه ای و عسلی</li><br><li>O-6625:کد محصول</li><br></ul></p>
+				<p style="font-family: A Zangar_Hamshahri;">قیمت: 1,700,000 تومان</p>
+				<button onclick="window.location.href='Purchase Registration Form.html'">افزودن به سبد خرید</button>
+			</div>
+
+<!-- تعریف محصول 6624، کیف دوشی طرح مصری زنانه -->
+      		<div class="product">
+				<img src="C:\Hirad Leather Website\Image/4.jpg" alt="محصول 3" width="200"	height="200">
+				<h3 style="font-family: A Zangar_Hamshahri;">کیف طرح مصری</h3>
+				<p><ul><br><li>چرم طبیعی گاوی</li><br><li>در رنگ های قهوه ای و عسلی</li><br><li>O-6624:کد محصول</li><br></ul></p>
+				<p style="font-family: A Zangar_Hamshahri;">قیمت: 1,500,000 تومان</p>
+				<button onclick="window.location.href='Purchase Registration Form.html'">افزودن به سبد خرید</button>
+			</div>
+			
+<!-- تعریف محصول 5515، کیف دوشی مردانه -->
+			<div class="product">
+				<img src="C:\Hirad Leather Website\Image/3.jpg" alt="کیف دوشی" width="200"	height="200">
+				<h3 style="font-family: A Zangar_Hamshahri;">کیف دوشی مردانه</h3>
+				<p><ul><br><li>چرم طبیعی گاوی</li><br><li>در رنگ های مشکی و قهوه ای</li><br><li>S-5515:کد محصول</li><br></ul></p>
+				<p style="font-family: A Zangar_Hamshahri;">قیمت: 1,200,000 تومان</p>
+				<button onclick="window.location.href='Purchase Registration Form.html'">افزودن به سبد خرید</button>
+			</div>
+
+<!-- تعریف محصول با کد 4414، کیف دیپلمات -->
+			<div class="product">
+				<img src="C:\Hirad Leather Website\Image/2.jpg" alt="کیف دیپلمات" width="200"	height="200">
+				<h3 style="font-family: A Zangar_Hamshahri;">کیف دیپلمات</h3>
+				<p><ul><br><li>چرم طبیعی گاوی</li><br><li>در رنگ های مشکی و قهوه ای</li><br><li>D-4414:کد محصول</li><br></ul></p>
+				<p style="font-family: A Zangar_Hamshahri;">قیمت: 2,500,000 تومان</p>
+				<button onclick="window.location.href='Purchase Registration Form.html'">افزودن به سبد خرید</button>
+			</div>
+
+		</div>
+	</div>
+
+<!-- تعریف محتویات قسمت پایین صفحه وب شامل: نماد اعتماد / آدرس و تلفن ها / خط افقی -->
+		<footer>
+    		<hr style="border-color: #e2b213;">
+
+     			<img src="C:\Hirad Leather Website\Image\0.png" alt="نماد اعتماد" width="20%" height="20%">
+
+      			<p><em><b>" بر طبق قوانین کلیه حقوق مادی و معنوی این سایت متعلق به چرم هیراد می باشد "</b></em></p>
+
+				<p><strong>آدرس: استان البرز، کرج، باغستان غربی، شبنم پنجم، پلاک 47<br>تلفن تماس: 02634332378<br>تلفن همراه: 09191271281</strong></p>
+    
+			<hr style="border-color: #e2b213;">
+		</footer>
+
+</body>
+</html>
